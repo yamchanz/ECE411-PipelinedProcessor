@@ -1,0 +1,18 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+C:/Users/David/Documents/5-stages-of-grief/mp4/hdl {C:/Users/David/Documents/5-stages-of-grief/mp4/hdl/rv32i_mux_types.sv}
+vlog -sv -work work +incdir+C:/Users/David/Documents/5-stages-of-grief/mp4/hdl {C:/Users/David/Documents/5-stages-of-grief/mp4/hdl/regfile.sv}
+vlog -sv -work work +incdir+C:/Users/David/Documents/5-stages-of-grief/mp4/hdl {C:/Users/David/Documents/5-stages-of-grief/mp4/hdl/pc_reg.sv}
+vlog -sv -work work +incdir+C:/Users/David/Documents/5-stages-of-grief/mp4/hdl {C:/Users/David/Documents/5-stages-of-grief/mp4/hdl/rv32i_types.sv}
+vlog -sv -work work +incdir+C:/Users/David/Documents/5-stages-of-grief/mp4/hdl {C:/Users/David/Documents/5-stages-of-grief/mp4/hdl/stage_register.sv}
+vlog -sv -work work +incdir+C:/Users/David/Documents/5-stages-of-grief/mp4/hdl {C:/Users/David/Documents/5-stages-of-grief/mp4/hdl/datapath.sv}
+vlog -sv -work work +incdir+C:/Users/David/Documents/5-stages-of-grief/mp4/hdl {C:/Users/David/Documents/5-stages-of-grief/mp4/hdl/control_rom.sv}
+vlog -sv -work work +incdir+C:/Users/David/Documents/5-stages-of-grief/mp4/hdl {C:/Users/David/Documents/5-stages-of-grief/mp4/hdl/cmp.sv}
+vlog -sv -work work +incdir+C:/Users/David/Documents/5-stages-of-grief/mp4/hdl {C:/Users/David/Documents/5-stages-of-grief/mp4/hdl/alu.sv}
+vlog -sv -work work +incdir+C:/Users/David/Documents/5-stages-of-grief/mp4/hdl {C:/Users/David/Documents/5-stages-of-grief/mp4/hdl/mp4.sv}
+
